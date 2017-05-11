@@ -19,14 +19,6 @@
 
 			}
 
-			.square {
-
-				width: 150px;
-				height: 150px;
-				background-color: red;
-				margin: 10px;
-
-			}
 		</style>
 
 	</head>
@@ -35,15 +27,13 @@
 
 		<div id="circle"></div>
 
-		<div class="square"></div>
-
-		<div class="square"></div>		
+		<p>This is some text.</p>
 
 		<script type="text/javascript">
 
 			$("#circle").click(function() {
 
-				alert("circle was clicked!");
+				$("p").html("This text has changed!");
 
 			});
 
