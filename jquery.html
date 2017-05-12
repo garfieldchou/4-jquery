@@ -27,13 +27,13 @@
 
 		<div id="circle"></div>
 
-		<iframe src="http://www.cnn.com"></iframe>
-
 		<script type="text/javascript">
 
-			$("#circle").hover(function() {
+			$("#circle").click(function(){
 
-				$("iframe").attr("src", "http://www.ecowebhosting.co.uk");
+				$("#circle").css("width", "400px");
+
+				$("#circle").css("background-color", "red");
 
 			});
 
