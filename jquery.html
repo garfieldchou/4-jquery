@@ -19,6 +19,15 @@
 
 			}
 
+			.square {
+
+				width: 150px;
+				height: 150px;
+				background-color: red;
+				margin: 10px;
+
+			}
+
 		</style>
 
 	</head>
@@ -27,11 +36,15 @@
 
 		<div id="circle"></div>
 
+		<div class="square"></div>
+
+		<div class="square"></div>
+
 		<script type="text/javascript">
 
-			$("#circle").click(function(){
+			$("div").click(function(){
 
-				alert($("body").css("width"));
+				$(this).css("display", "none");
 
 			});
 
