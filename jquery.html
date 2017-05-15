@@ -7,27 +7,34 @@
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 
+		<style type="text/css">
+			
+			#circle {
+
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background-color: green;
+
+			}
+		</style>
+
 	</head>
 
 	<body>
 
-		<p id="text">This is some text!</p>
-
-		<button id="toggle">Toggle Text</button>
+		<div id="circle"></div>
 
 		<script type="text/javascript">
 
-			$("#toggle").click(function() {
+			$("#circle").click(function(){
 
-				if ( $("#text").css("display") == "none") {
-
-					$("#text").fadeIn();
-
-				} else {
-
-					$("#text").fadeOut();
-
-				}
+				$(this).animate({
+					width:"400px", 
+					height:"400px",
+					marginLeft:"100px",
+					marginTop:"100px"
+				}, 2000);
 
 			});
 
