@@ -7,40 +7,19 @@
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 
-		<style type="text/css">
-			
-			#circle {
-
-				width: 150px;
-				height: 150px;
-				border-radius: 50%;
-				background-color: green;
-
-			}
-		</style>
-
 	</head>
 
 	<body>
 
-		<div id="circle"></div>
-
 		<script type="text/javascript">
 
-			$("#circle").click(function(){
+			var regex = /is/;
 
-				$(this).animate({
-					width:"400px", 
-					height:"400px",
-					marginLeft:"100px",
-					marginTop:"100px"
-				}, 2000, function(){
+			var string = "Regex is great!";
 
-					$(this).css("background-color", "red");
-					
-				});
+			var result = string.match(regex);
 
-			});
+			alert(result);
 
 		</script>
 		
