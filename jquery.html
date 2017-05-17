@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>jQuery</title>
+		<title>AJAX</title>
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 
@@ -12,14 +12,12 @@
 	<body>
 
 		<script type="text/javascript">
-
-			var regex = /e/g;
-
-			var string = "Regex is great!";
-
-			var result = string.match(regex);
-
-			alert(result);
+          
+          $.get("info.txt", function(data) {
+          
+          	alert(data);
+            
+          });
 
 		</script>
 		
