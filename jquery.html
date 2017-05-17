@@ -12,7 +12,7 @@
 			body {
 
 				font-family: helvetica, sans-serif;
-				font-size: 100%;
+				font-size: 180%;
 
 			}
 
@@ -30,6 +30,8 @@
 
 				position: relative;
 				top: 4px;
+				width: 150px;
+				float: left;
 
 			}
 
@@ -37,7 +39,13 @@
 
 				width: 500px;
 				margin: 0 auto;
-				
+
+			}
+
+			.form-element {
+
+				margin-bottom: 10px;
+
 			}
 
 		</style>
@@ -48,8 +56,19 @@
 
 		<div id="wrapper">
 
-			<label for="email">Email</label>
-			<input type="text" name="email" id="email" placeholder="eg. yourname@gmail.com">
+			<div class="form-element">
+
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" placeholder="eg. yourname@gmail.com">
+
+			</div>
+
+			<div class="form-element">
+
+				<label for="phone">Telephone</label>
+				<input type="text" name="phone" id="phone" placeholder="eg. 0123456789">
+
+			</div>
 
 		</div>
 
