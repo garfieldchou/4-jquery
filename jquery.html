@@ -13,11 +13,17 @@
 
 		<script type="text/javascript">
           
-          $.get("info.txt", function(data) {
+          $.ajax("info.txt")
+            .done(function(data) {
           
-          	alert(data);
+                alert(data);
             
-          });
+            })
+            .fail(function() {
+          
+                alert("Could not get data");
+            
+            });
 
 		</script>
 		
