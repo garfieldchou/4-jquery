@@ -3,29 +3,21 @@
 
 	<head>
 
-		<title>AJAX</title>
+		<title>jQuery</title>
 
 		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+
+		<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
 
 	</head>
 
 	<body>
-    
-        <p></p>
 
 		<script type="text/javascript">
           
-          $.ajax("info.txt")
-            .done(function(data) {
           
-                $("p").html(data);
-            
-            })
-            .fail(function() {
-          
-                alert("Could not get data");
-            
-            });
 
 		</script>
 		
