@@ -121,7 +121,13 @@
 
 				if ($.isNumeric($("#phone").val()) == false) {
 
-					errorMessage += "<p>Your phone number is not numeric</p>"
+					errorMessage += "<p>Your phone number is not numeric</p>";
+
+				}
+
+				if ($("#password").val() != $("#passwordConfirm").val()) {
+
+					errorMessage += "<p>Your password don't match</p>";
 
 				}
 
