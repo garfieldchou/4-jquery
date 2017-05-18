@@ -115,7 +115,13 @@
 
 				if (isEmail($("#email").val()) == false) {
 
-					errorMessage += "Your email address is not valid";
+					errorMessage += "<p>Your email address is not valid</p>";
+
+				}
+
+				if ($.isNumeric($("#phone").val()) == false) {
+
+					errorMessage += "<p>Your phone number is not numeric</p>"
 
 				}
 
