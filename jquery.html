@@ -112,6 +112,37 @@
 			$("#submitButton").click(function() {
 
 				var errorMessage = "";
+				var fieldMissing = "";
+
+				if ($("#email").val() == "") {
+
+					fieldMissing += "<br>Email";
+
+				}
+
+				if ($("#phone").val() == "") {
+
+					fieldMissing += "<br>Telephone";
+					
+				}
+
+				if ($("#password").val() == "") {
+
+					fieldMissing += "<br>Password";
+					
+				}								
+
+				if ($("#passwordConfirm").val() == "") {
+
+					fieldMissing += "<br>Confirm Password";
+					
+				}
+
+				if (fieldMissing != "") {
+
+					errorMessage += "<p>The following field(s) are missing:" + fieldMissing;
+					
+				}
 
 				if (isEmail($("#email").val()) == false) {
 
