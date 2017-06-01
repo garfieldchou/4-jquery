@@ -11,6 +11,18 @@
 
 		<link href="jquery-ui/jquery-ui.css" rel="stylesheet">
 
+		<style type="text/css">
+			
+			#resizable {
+
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+
+			}
+			
+		</style>
+
 	</head>
 
 	<body>
@@ -23,11 +35,15 @@
 
 		</div>
 
+		<div id="resizable"></div>
+
 		<script type="text/javascript">
           
           $( "#draggable" ).draggable({ axis: "x" });
 
           $("span").draggable({containment: "parent"});
+
+          $("#resizable").resizable();
 
 		</script>
 		
