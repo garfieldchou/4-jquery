@@ -13,7 +13,7 @@
 
 		<style type="text/css">
 			
-			#resizable {
+			#draggable {
 
 				width: 100px;
 				height: 100px;
@@ -21,10 +21,10 @@
 
 			}
 
-			#also {
+			#droppable {
 
-				width: 100px;
-				height: 100px;
+				width: 300px;
+				height: 300px;
 				background-color: red;
 
 			}			
@@ -35,39 +35,24 @@
 
 	<body>
 
-		<div id="draggable">Drag me horizontally!</div>
+		<div id="draggable"></div>
 
-		<div style="width:400px;height:300px;background-color:yellow">
-			
-			<span>I'm stuck in the box!</span>
-
-		</div>
-
-		<div id="resizable"></div>
-
-		<div id="also"></div>
+		<div id="droppable"></div>
 
 		<script type="text/javascript">
-          
-          $( "#draggable" ).draggable({ axis: "x" });
 
-          $("span").draggable({containment: "parent"});
+			$("#draggable").draggable();
 
-          $("#resizable").resizable({
-          	grid:50,
-          	alsoResize: "#also",
-          	resize: function( event, ui ) {
+			$("#droppable").droppable({
 
-          		if ($("#resizable").width() > 300) {
+				drop: function( event, ui ) {
 
-          			alert("big enough!");
-          			
-          		}
+					alert("Dropped!");
 
-          	}
-          });
+				}
 
-          $("#also").resizable();
+			});
+
 
 		</script>
 		
