@@ -103,7 +103,7 @@
 			.hidden {
 
 				display: none;
-				
+
 			}
 
 		</style>
@@ -163,6 +163,10 @@
 				$(this).toggleClass("active");
 
 				$(this).removeClass("highlightedButton");
+
+				var panelId = $(this).attr("id") + "Panel";
+
+				alert(panelId);
 
 			});
 
