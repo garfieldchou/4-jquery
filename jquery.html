@@ -76,6 +76,13 @@
 			.highlightedButton {
 
 				background-color: grey;
+
+			}
+
+			textarea {
+
+				width: 50%;
+
 			}
 
 		</style>
@@ -106,6 +113,12 @@
 
 		</div>
 
+		<div id="bodyContainer">
+			
+			<textarea id="htmlTextarea">Hello World!</textarea>
+
+		</div>
+
 		<script type="text/javascript">
 			
 			$(".toggleButton").hover(function() {
@@ -125,6 +138,8 @@
 				$(this).removeClass("highlightedButton");
 
 			});
+
+			$("textarea").height($(window).height() - $("#header").height() -15);
 			
 		</script>
 		
