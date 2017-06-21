@@ -70,7 +70,12 @@
 			.active {
 
 				background-color: #E8F2FF;
-				
+
+			}
+
+			.highlightedButton {
+
+				background-color: grey;
 			}
 
 		</style>
@@ -105,11 +110,11 @@
 			
 			$(".toggleButton").hover(function() {
 
-				$(this).css("background-color", "grey");
+				$(this).addClass("highlightedButton");
 
 			}, function() {
 
-				$(this).css("background-color", "#EEEEEE");
+				$(this).removeClass("highlightedButton");
 
 			});
 			
