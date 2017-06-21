@@ -67,6 +67,12 @@
 
 			}
 
+			.active {
+
+				background-color: #E8F2FF;
+				
+			}
+
 		</style>
 
 	</head>
@@ -83,13 +89,13 @@
 
 			<div id="buttonContainer">
 				
-				<div class="toggleButton" id="html">HTML</div>
+				<div class="toggleButton active" id="html">HTML</div>
 
 				<div class="toggleButton" id="css">CSS</div>
 
 				<div class="toggleButton" id="javascript">JavaScript</div>
 
-				<div class="toggleButton" id="output">Output</div>
+				<div class="toggleButton active" id="output">Output</div>
 
 			</div>
 
@@ -104,7 +110,7 @@
 			}, function() {
 
 				$(this).css("background-color", "#EEEEEE");
-				
+
 			});
 			
 		</script>
