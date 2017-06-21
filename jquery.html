@@ -82,6 +82,8 @@
 			textarea {
 
 				resize: none;
+				border-top: none;
+				border-color: grey;
 
 			}
 
@@ -89,6 +91,12 @@
 
 				float: left;
 				width: 50%;
+
+			}
+
+			iframe {
+
+				border: none;
 
 			}
 
@@ -148,7 +156,9 @@
 
 			});
 
-			$("textarea").height($(window).height() - $("#header").height() -15);
+			$(".panel").height($(window).height() - $("#header").height() -15);
+
+			$(".panel").width($(window).width() / 2 -10);
 			
 		</script>
 		
