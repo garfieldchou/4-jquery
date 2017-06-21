@@ -148,6 +148,12 @@
 		</div>
 
 		<script type="text/javascript">
+
+			function updateOutput() {
+
+				$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+
+			}
 			
 			$(".toggleButton").hover(function() {
 
@@ -179,11 +185,11 @@
 
 			$(".panel").width($(window).width() / 2 -10);
 
-			$("iframe").contents().find("html").html($("#htmlPanel").val());
+			updateOutput();
 
 			$("textarea").on("change keyup paste", function(){
 
-				$("iframe").contents().find("html").html("<html><head><style type='text/css'>" + $("#cssPanel").val() + "</style></head><body>" + $("#htmlPanel").val() + "</body></html>");
+				updateOutput();
 
 			});
 			
